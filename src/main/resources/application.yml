@@ -1,0 +1,19 @@
+server:
+  port: 4322
+  servlet:
+    context-path: "/"
+
+logging:
+  group:
+    app: "com.nicola.web.graphqlspring"
+  level:
+    root: warn
+    web: info
+    sql: info,
+    app: trace
+
+persistence:
+  sql:
+    host: "postgres://postgres:password@localhost:5432/azdev"
+  mongo:
+    host: "mongodb://localhost:27017/azdev"
